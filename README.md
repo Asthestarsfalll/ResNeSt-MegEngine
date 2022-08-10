@@ -51,7 +51,7 @@ pretrained_model = hub.load(
     repo_info='asthestarsfalll/resnest-megengine', entry=model_name, git_host='github.com', pretrained=True)
 ```
 
-Currently only support convnext_tiny, you can run convert_weights.py to convert other models.
+Currently only support resnest50, you can run convert_weights.py to convert other models.
 For example:
 
 ```bash
