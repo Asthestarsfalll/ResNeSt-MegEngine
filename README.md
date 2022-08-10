@@ -72,10 +72,9 @@ model.load_state_dict(mge.load('./pretrained/resnest101.pkl'))
 
 ## TODO
 
-- [ ] add object detection codes
-- [ ] add semantic segmentation codes
 - [ ] add train codes
+- [ ] maybe export to some inference framwork
 
 ## Reference
 
-[The official implementation of ConvNeXt](https://github.com/facebookresearch/ConvNeXt)
+[The official implementation of ResNeSt](https://github.com/zhanghang1989/ResNeSt)
