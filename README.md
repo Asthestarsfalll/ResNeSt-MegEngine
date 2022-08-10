@@ -25,16 +25,8 @@ from  megengine import hub
 modelhub = hub.import_module(repo_info='asthestarsfalll/resnest-megengine', git_host='github.com')
 
 # load ResNeSt model and custom on you own
-resnest = modelhub.ResNeSt(modelhub.Bottleneck, 
-                           [3, 24, 36, 3],
-                   		  radix=2, 
-                           groups=1, 
-                           bottleneck_width=64,
-                   		  deep_stem=True, 
-                           stem_width=64, 
-                           avg_down=True,
-                   		  avd=True, 
-                           avd_first=False,)
+resnest = modelhub.ResNet(modelhub.Bottleneck, [3, 24, 36, 3], radix=2, groups=1, bottleneck_width=64,
+                          deep_stem=True, stem_width=64, avg_down=True, avd=True, avd_first=False)
 
 # load pretrained model 
 pretrained_model = modelhub.resnest50(pretrained=True) 
